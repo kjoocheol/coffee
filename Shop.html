@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+
+    <!--  -->
+    <!-- <link rel="stylesheet" href="./resouces/css/mystyle.css"> -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        div{
+            border: 1px solid black;
+        }
+
+        .menu{
+            width: 100%;
+            height: 100px;
+        }
+
+        .banner{
+            height: 200px;
+            overflow: hidden;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            position: relative;
+        }
+
+        .banner > div{
+            position: absolute;
+            left: 50%;
+            top: 20%;
+
+            transform: translate(-50%, 0);
+        }
+
+        .banner h2{
+            color: white;
+            font-size: 100px;
+            /* padding-bottom: 50px; */
+
+        }
+
+        .message{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            padding-top: 100px;
+            padding-bottom: 50px;
+        }
+        .message h1{
+            color: black;
+            font-style: oblique;
+        }
+
+        .card {
+            width: 200px;
+            height: 300px;
+
+            display: inline-flex;
+            flex-direction: column;
+            margin-right: 10px;
+            border-radius: 20px;
+
+            /*테두리에 그림자 주기*/
+            /* 첫 번째 pixel은 그림자의 가로방향 위치*/
+            /* 두 번째 pixel은 그림자의 세로방향 위치*/
+            /* 세 번째 pixel은 그림자의 뿌연 정도*/
+            /* 네 번째 pixel은 그림자의 번짐 정도*/
+            box-shadow: 0px 0px 4px 2px #dddddd;
+
+            /*자식요소가 부모 영역을 벗어날 때의 처리*/
+            overflow: hidden;
+        }
+
+        .card>div {
+            border: 1px solid red;
+        }
+
+        /* card 클래스 내 첫번쨰 div 선택*/
+        .card>div:nth-child(1) {
+            height: 70%;
+            position: relative;
+
+            /* 내부 이미지 가운데 정렬*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        /* card 클래스 내 두번쨰 div 선택*/
+        .card>div:nth-child(2) {
+            height: 30%;
+            padding-left: 10px;
+        }
+
+        
+        /* .photo {
+            transition-duration: 1s;
+        }
+
+        .photo:hover {
+            width: 200%;
+            /* height: 200%; */
+
+        
+
+        .card-container {
+            border: 2px solid green;
+            /* display: flex; */
+            width: 800px;
+            /* 가로 방향으로 삐져나오는 자식 요소에 대한 처리*/
+            white-space: nowrap;
+
+            /* 가로 방향으로 삐져나오는 자식 요소에 대한 처리*/
+            overflow-x: scroll;
+
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="menu">
+
+        </div>
+    
+        <div class="banner">
+            <img width="100%" 
+            src="https://www.nestleprofessional.in/sites/default/files/2021-08/Roasted-Coffee-Beans.jpg" alt="">
+            
+            <div>
+                <h2>SHOP</h2>
+            </div>
+            
+        </div>
+    
+        <div class="body">
+    
+            <div class="message">
+                <h1>인터뷰의 감각적인 커피가 주는 최상의 맛과 향.</h1>
+                <h1>최상의 맛과 향.</h1>
+                <h1>이젠 집에서도 편하게 인터뷰 하세요.</h1>
+            </div>
+
+            <!-- 카드 만들기 -->
+            <div class="card">
+                <!-- <a href="">01.Green Lady Blend</a> -->
+                <div>
+                    <p>01.Green Lady Blend</p>
+                    <img class="photo" width="120%"
+                        src="https://lh5.googleusercontent.com/proxy/yu_2KVbCW-g-u2SB40UEyQR7SJcz_6nFpFpmOmAsNVA9BPocNsNk4FhwivkqXgl4bOFXbBu_JNwyzQo4edg66e2UMzMmzkiHilRQVX68Q0vjPMx7DxK344YqDQTxB19VS3YDFEyecbyv4w08og"
+                        alt="">
+                    <img class="like" width="40px" src="./resources/images/heart.png" alt="">
+                </div>
+                <div>
+                    <p>그린레이디 1kg</p>
+                    <p><span style="color: red;">[과일향, 새콤, 산미]</span> 38,000원</p> 
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    
+
+</body>
+</html>
