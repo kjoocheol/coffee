@@ -11,7 +11,7 @@
             padding: 0;
         }
         div{
-            border: 1px solid black;    
+            border: 0px solid black;    
         }
 
         .navigation{
@@ -86,9 +86,8 @@
         .body1{
             display: flex;
             justify-content: center;
-
-           
         }
+
 
         .body2{
             display: flex;
@@ -108,11 +107,12 @@
 
         .body2 > a{
             text-decoration: none;
-
             color: green;
             font-size: 20px;
 
         }
+
+       
        
         .body3{
             display: flex;
@@ -143,14 +143,28 @@
         align-items: center;
         top: 80%;
 
+        color: white;
+        
+        position: absolute;
+
+       }
+       
+       .body4 > a{
+        display: flex;
+        width: 230px;
+        height: 30px;
+        justify-content: center;
+        align-items: center;
+        bottom: 50px;
+
         text-decoration: none;
-        font-size: 20px;
+        font-size: 10px;
         color: white;
         
         position: absolute;
 
         border-radius: 5px;
-        border: 1px solid white;
+        border: 2px solid white;
        }
 
        .brand{
@@ -164,12 +178,21 @@
 
         justify-content: center;
        }
+       .view{
+        background-color: white;
+        
+        font-size: 20px;
+        border-radius: 15px;
+       }
+
+       .view > a{
+        color: green;
+       }
 
        .detail{
         display: flex;
         bottom: -45%;
         left: 150px;
-
         height: 150px;
         align-items: center;
 
@@ -192,16 +215,7 @@
         margin-bottom: 30px;
        }
 
-       .view{
-        background-color: white;
-        
-        font-size: 20px;
-        border-radius: 15px;
-       }
-
-       .view > a{
-        color: green;
-       }
+       
 
        .detail > div > div{
         display: flex;
@@ -214,17 +228,238 @@
         border: 2px solid green
 
        }
+       /* 원두시작 */
+       .bean{
+        display: flex;
+        width: 100%;
+        height: 650px;
 
+        overflow: hidden;
+
+        margin-bottom: 25px;
+
+        justify-content: center;
+       }
+
+       .beans {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 650px;
+       }
+
+       .detail_bean{
+        display: flex;
+        left: 150px;
+        height: 150px;
+
+        bottom: -1100px;
+
+        position: absolute;
+        
+       }
+
+       .detail_bean > div{
+        top: 100px;
+       }
+
+       .detail_bean > div > a{
+        text-decoration: none;
+        color: white;
+       }
+
+       .detail_bean > div > a > h2 {
+        font-size: 35px;
+        margin-bottom: 40px;
+       }
+
+       .detail_bean > div > a > h3{
+        width: 350px;
+        margin-bottom: 30px;
+       }
+
+       .detail_bean > div > div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: green;
+        
+        width: 130px;
+        height: 60px;
+        border: 2px solid green
+
+       }
+       /* 원두 끝 */
+
+       /* 메뉴 시작 */
+       .coffee_manu{
+        display: flex;
+        width: 100%;
+        height: 650px;
+
+        overflow: hidden;
+
+        margin-bottom: 25px;
+
+        justify-content: center;
+       }
+
+       .coffee_m {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 650px;
+       }
+
+       .coffee_m1{
+        display: flex;
+        left: 150px;
+        height: 150px;
+
+        bottom: -1750px;
+
+        position: absolute;
+        
+       }
+
+       .coffee_m1 > div{
+        top: 100px;
+       }
+
+       .coffee_m1 > div > a{
+        text-decoration: none;
+        color: white;
+       }
+
+       .coffee_m1 > div > a > h2 {
+        font-size: 35px;
+        margin-bottom: 40px;
+       }
+
+       .coffee_m1 > div > a > h3{
+        width: 350px;
+        margin-bottom: 30px;
+       }
+
+       .coffee_m1 > div > div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: green;
+        
+        width: 130px;
+        height: 60px;
+        border: 2px solid green
+
+       }
+       /* 메뉴 끝 */
+
+       /* 디저트 시작 */
+       .dessert{
+        display: flex;
+        width: 100%;
+        height: 650px;
+
+        overflow: hidden;
+
+        margin-bottom: 25px;
+
+        justify-content: center;
+       }
+
+       .dessert1 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 650px;
+       }
+
+       .dessert2{
+        display: flex;
+        left: 150px;
+        height: 150px;
+
+        bottom: -2450px;
+
+        position: absolute;
+        
+       }
+
+       .dessert2 > div{
+        top: 100px;
+       }
+
+       .dessert2 > div > a{
+        text-decoration: none;
+        color: white;
+       }
+
+       .dessert2 > div > a > h2 {
+        font-size: 35px;
+        margin-bottom: 40px;
+       }
+
+       .dessert2 > div > a > h3{
+        width: 350px;
+        margin-bottom: 30px;
+       }
+
+       .dessert2 > div > div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: green;
+        
+        width: 130px;
+        height: 60px;
+        border: 2px solid green
+
+       }
+       /* 디저트 끝 */
+
+       /* footer css */
        .footer{
         display: flex;
         width: 100%;
 
        }
 
-       .footer > div:nth-child(1){
-        width: 30%;
+       .footer > div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
 
+       .footer > div > div:nth-child(1) {
+        display: flex;
+        align-items: center;
         }
+
+        .logo1 > a:nth-child(1){
+           display: flex;
+        }
+        
+        .asd1 {
+            width: 400px;
+            padding-left: 200px;
+        }
+
+        .asd2 {
+            display: flex;
+            flex-direction: column;
+        }
+        .asd1 > h3{
+            margin-bottom: 10px;
+        }
+        .asd2 > h3{
+            margin-bottom: 10px;
+        }
+
+
+
+            
+
+        
       
 
     </style>
@@ -240,7 +475,7 @@
                 </a>
             </div>
             <div class="manu">
-                <a href="">HOME</a>
+                <a href="./index.html">HOME</a>
                 <a href="">INTERVIEW</a>
                 <a href="">BUSINESS</a>
                 <a href="">STORE</a>
@@ -263,7 +498,7 @@
                 <div class="body2">
                 <a href="">
                     <img width="100%" src="https://coffeeinterview.com/theme/coffeeinterview/images/icons/logo_circle.png" alt="">
-                    <h4>당신을 '인터뷰' 파트너로 모십니다.</h4>
+                    <h4 style="display: flex; justify-content: center;">당신을 '인터뷰' 파트너로 모십니다.</h4>
                 </a>
                 
                 </div>
@@ -276,7 +511,7 @@
                 </div>
 
                 <div class="body4">
-                    <h5>인터뷰 오픈 상담가이드 확인</h5>
+                    <a href=""><h2>인터뷰 오픈 상담가이드 확인</h2></a>
                 </div>
             </div>
         </div>
@@ -299,22 +534,95 @@
                         <a href="" style="text-decoration: none;">VIEW MORE</a>
                     </div>
                 </div>
-                
             </div>
         </div>
             <!-- 브랜드 끝 -->
-       
+        <div class="bean">
+            <div class="beans">
+                <a href="">
+                    <img width="1750px" src="./resources/imges/원두.jpg" alt="">
+                </a>
+                <div class="detail_bean">
+                    <div>
+                        <a href="">
+                            <h2>커피인터뷰 원두</h2>
+                            <h3>당일 로스팅 된 최고급 원두로 만들어진 커피인터뷰 만의 블렌드를 느껴보세요.</h3>
+                        </a>
+                        <div class="view">
+                            <a href="" style="text-decoration: none;">VIEW MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!-- 원두 끝 -->
+
+        <div class="coffee_manu">
+            <div class="coffee_m">
+                <a href="">
+                    <img width="1750px" src="./resources/imges/커피들.jpg" alt="">
+                </a>
+                <div class="coffee_m1">
+                    <div>
+                        <a href="">
+                            <h2>커피인터뷰 메뉴</h2>
+                            <h3>인터뷰의 감각적인 커피가 주는 최상의 맛과 향으로 당신의 활기찬 하루를 경험해보세요.</h3>
+                        </a>
+                        <div class="view">
+                            <a href="" style="text-decoration: none;">VIEW MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 메뉴 끝 -->
+        <div class="dessert">
+            <div class="dessert1">
+                <a href="">
+                    <img width="1750px" src="./resources/imges/디저트.jpg" alt="">
+                </a>
+                <div class="dessert2">
+                    <div>
+                        <a href="">
+                            <h2>커피인터뷰 메뉴</h2>
+                            <h3>인터뷰의 감각적인 커피가 주는 최상의 맛과 향으로 당신의 활기찬 하루를 경험해보세요.</h3>
+                        </a>
+                        <div class="view">
+                            <a href="" style="text-decoration: none;">VIEW MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 디저트 끝 -->
+
         <!-- Footer 시작 -->
         <div class="footer">
-            <div>
-                <div>
+            <div style="width: 100%; height: 300px;">
+                <div style="width: 1200px; height: 250px; ">
+                    <div class="logo1">
                 <a href="">
-                    <img width="130px" src="https://coffeeinterview.com/theme/coffeeinterview/images/icons/logo_circle.png" alt="">
+                    <img width="130px" height="100px" src="https://coffeeinterview.com/theme/coffeeinterview/images/icons/logo_circle.png" alt="">
                 </a>
                 <a href="">
-                    <img width="30px" src="https://cdn-icons-png.freepik.com/512/3741/3741664.png" alt="">
+                    <img width="30px" height="20px" src="https://cdn-icons-png.freepik.com/512/3741/3741664.png" alt="">
                 </a>
+                    </div>
+                    <div class="asd1">
+                        <h3>● 주식회사 인터뷰 | 권순창</h3>
+                        <h3>● 대전광역시 서구 계룡로 199, 501호</h3>
+                        <h3>● 커피 및 베이커리 문의 : 1544-0933</h3>
+                        <h3>● 스테이 문의 : 010-6836-4678</h3>
+                        <h3>● 383-81-01897 | 2020-대전서구-2249</h3>
+                    </div>
+                    <div class="asd2">
+                        <h3>● 사업자정보확인</h3>
+                        <h3>● 개인정보처리방침</h3>
+                        <h3>● 이용약관</h3>
+                        <h3>● coffeeinterview@naver.com</h3>
+                    </div>
                 </div>
+                
             </div>
         </div>
     
