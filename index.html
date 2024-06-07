@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>커피 인터뷰</title>
 
     <style>
         *{
@@ -42,103 +42,196 @@
             
         }
 
-        .login > a {
+        .login{
+            padding-top: 50px;
+            padding-right: 100px;
+          
+        }
+
+
+        .login1{
             display: flex;
+            width: 70px;
+            height: 35px;
+
+            justify-content: center;
             align-items: center;
 
-            padding-top: 30px;
-            padding-right: 50px;
-            padding-left: 20px;
-            padding-bottom: 30px;
+            /* 둥글게 만들기 */
+            border-radius: 5px;
+            /* 테두리 크기 색 */
+            border: 1px solid green
+        }
+
+
+        .login1 > a{
+            /* 텍스트 밑줄 없애기 */
+            text-decoration: none;
+            color: green;
+
+            font-size: 15px;
         }
 
         .body{
-            display: flex;
-            flex-direction: column;
             width: 100%;
-        }
-
-        .body1{
-            height: 300px;
+            height: 650px;
             overflow: hidden;
 
             display: flex;
             justify-content: center;
-            align-items: center;
-
+            
+            margin-bottom: 25px;
         }
 
-        .body1 > h1{
+        .body1{
             display: flex;
+            justify-content: center;
 
-            padding-top: 140px;
-
-            position: absolute;
-            color: white;
-            font-size: 40px;
+           
         }
 
         .body2{
-            width: 100%;
-            height: 250px;
-
             display: flex;
+            height: 300px;
+            width: 500px;
+            margin-top: 100px;
+
             justify-content: center;
+            align-items: center;
 
-            position: relative;
+
+            background-color: #cccccc;
+
+            /* 맨위로 가져오기 (다른 div 위) */
+            position: absolute;
         }
 
-        .body2 > card{
-            height: -100px;
+        .body2 > a{
+            text-decoration: none;
+
+            color: green;
+            font-size: 20px;
+
         }
-
-        .card{
-            width: 250px;
-            height: 150px;
-            top: -20%;
-
-            background-color: white;
-
+       
+        .body3{
             display: flex;
-            flex-direction: column;
-
-            border-color: 1px solid black;
-            box-shadow: 0px 0px 5px 2px #dddddd;
 
             position: absolute;
         }
 
-        .card > div{
-            height: 100%;
+       
 
+        .body3 > div > a{
             display: flex;
-            justify-content: center;
-            align-items: center;
-            
+            height: 470px;
+            width: 600px;
+            align-items: end;
+
+            text-decoration: none;
+            color: white;
+
+            font-size: 20px;
+
         }
 
-        .card > h1 {
-            display: flex;
-            justify-content: center;
-            padding-bottom: 25px;
-        }
+       .body4{
+        display: flex;
+        width: 230px;
+        height: 30px;
+        justify-content: center;
+        align-items: center;
+        top: 80%;
 
-        .card > h2 { 
-            font-size: 15px;
-
-            padding-bottom: 5px;
-
-            display: flex;
-            justify-content: center;
-        }
-
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
         
+        position: absolute;
+
+        border-radius: 5px;
+        border: 1px solid white;
+       }
+
+       .brand{
+        display: flex;
+        width: 100%;
+        height: 650px;
+
+        overflow: hidden;
+
+        margin-bottom: 25px;
+
+        justify-content: center;
+       }
+
+       .detail{
+        display: flex;
+        bottom: -45%;
+        left: 150px;
+
+        height: 150px;
+        align-items: center;
+
+        position: absolute;
         
+       }
+
+       .detail > div > a{
+        text-decoration: none;
+        color: white;
+       }
+
+       .detail > div > a > h2 {
+        font-size: 35px;
+        margin-bottom: 40px;
+       }
+
+       .detail > div > a > h3{
+        width: 350px;
+        margin-bottom: 30px;
+       }
+
+       .view{
+        background-color: white;
+        
+        font-size: 20px;
+        border-radius: 15px;
+       }
+
+       .view > a{
+        color: green;
+       }
+
+       .detail > div > div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: green;
+        
+        width: 130px;
+        height: 60px;
+        border: 2px solid green
+
+       }
+
+       .footer{
+        display: flex;
+        width: 100%;
+
+       }
+
+       .footer > div:nth-child(1){
+        width: 30%;
+
+        }
+      
 
     </style>
 
 </head>
 <body>
+    
     <div class="container">
         <div class ="navigation">
             <div class="logo">
@@ -153,40 +246,81 @@
                 <a href="">STORE</a>
                 <a href="">SHOP</a>
             </div>
+
             <div class="login">
-                <a href="">
-                    <img width="80px" src="https://cdn-icons-png.flaticon.com/512/95/95461.png" alt="">
-                </a>
+                <div class="login1">
+                    <a href="">로그인</a>
+                </div>
             </div>
         </div>
 
         <div class="body">
+            
             <div class="body1">
-                <img width="100%" src="./resources/imges/store-pop-31.jpg" alt="">
-                <h1>STORE</h1>
-            </div>
-           
-            <div class="body2">
-                <div class="card">
-                        <h1>STORE</h1>
-                        <h2>One and Only!
-                        전국 커피인터뷰에서만 볼 수 있는
-                        섬세하고 세련된 무드의 감각적인 공간에서
-                        다양한 인터뷰의 색깔을 느껴보세요.
-                        </h2>
-                    </input>
+                    <a href="">
+                <img width="1750px"  src="./resources/imges/풀잎.jpg" alt="">
+                    </a>
+                <div class="body2">
+                <a href="">
+                    <img width="100%" src="https://coffeeinterview.com/theme/coffeeinterview/images/icons/logo_circle.png" alt="">
+                    <h4>당신을 '인터뷰' 파트너로 모십니다.</h4>
+                </a>
+                
+                </div>
+                <div class="body3">
+                    <div>
+                    <a href="">
+                        <h4>커피의 편암함이 있는 공간, 인터뷰는 누구나 머물고 싶은 '작품'입니다. '자연과 '휴식'을 잇는 인터뷰의 새로운 가치를 확인하세요.</h4>
+                    </a>
+                    </div>
+                </div>
+
+                <div class="body4">
+                    <h5>인터뷰 오픈 상담가이드 확인</h5>
                 </div>
             </div>
-
-            <div class="body3">
-                <div class="card1">
-                    <p>
-                    <img src="https://coffeeinterview.com/theme/coffeeinterview/images/store-1.jpg" alt="">
-                    </p>
-                </div>
-            </div>
-
         </div>
+            <!-- 상담페이지 끝 -->
+        
+        <div class="brand">
+            <div class="fase">
+                <a href="">
+                    <img width="1750px" src="./resources/imges/입구.jpg" alt="">
+                </a>
+            </div>
+            <div class="detail">
+                <div>
+                    <a href="">
+                        <h2>커피인터뷰 브랜드</h2>
+                        <h3>인터뷰는 커피와 휴식을 통하여 자연속에서 편히 쉴 수 있는 공간을 만들어 갑니다.</h3>
+                        
+                    </a>
+                    <div class="view">
+                        <a href="" style="text-decoration: none;">VIEW MORE</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+            <!-- 브랜드 끝 -->
+       
+        <!-- Footer 시작 -->
+        <div class="footer">
+            <div>
+                <div>
+                <a href="">
+                    <img width="130px" src="https://coffeeinterview.com/theme/coffeeinterview/images/icons/logo_circle.png" alt="">
+                </a>
+                <a href="">
+                    <img width="30px" src="https://cdn-icons-png.freepik.com/512/3741/3741664.png" alt="">
+                </a>
+                </div>
+            </div>
+        </div>
+    
+
     </div>
+
+    
 </body>
 </html>
